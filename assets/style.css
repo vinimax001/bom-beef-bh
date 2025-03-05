@@ -23,7 +23,7 @@ body{
     width: 100%;
     margin: auto;
     max-width: 1220px;
-    padding: 45px 20px;
+    padding: 30px 20px;
 }
 
 /* HEADER */
@@ -84,8 +84,59 @@ header .menu:hover{
     color: #999;
 }
 
+/* HERO */
+.hero .container{
+    display: flex;
+}
+
+.hero leftside, .hero .rightside{
+    flex: 1;
+}
+
+.hero .leftside{
+    padding-bottom: 150px;
+}
+
+.hero .rightside{
+    text-align: center;
+}
+
+.hero .rightside img{
+    width: auto;
+    height: 600px;
+}
+
+.hero h1{
+    font-family: 'Calistoga';
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 74px;
+}
+
+.hero p{
+    font-size: 20px;
+    line-height: 26px;
+    margin: 30px 0px;
+}
+
+.hero .button{
+    display: inline-block;
+    background-color: #FE6A0F;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero .button:hover{
+    opacity: 0.9;
+}
+
 /* TELAS ATE 820PX*/
 @media(max-width: 820px){
+    
+    /* HEADER */
     header nav{
         display: none;
     }
@@ -93,4 +144,26 @@ header .menu:hover{
         display: flex;
     }
 
+    /* HERO */
+    .hero .container{
+        flex-direction: column;
+    }
+
+    .hero .leftside{
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .hero .rightside{
+        padding-bottom: 40px;
+    }
+
+    .hero .rightside img{
+        height: 300px;
+    }
+
+    .hero h1{
+        font-size: 43px;
+        line-height: 50px;
+    }
 }
