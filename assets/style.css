@@ -246,6 +246,39 @@ header .menu:hover{
     font-weight: bold;
     color: #FE6A0F;
 }
+
+/*FOOTER*/
+footer{
+    background-color: #1f1f1f;
+}
+
+footer .container{
+    display: flex; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .logo{
+    padding: 20px;
+    gap: 50px;
+}
+
+footer .copyrights {
+    font-size: 20px;
+    color: #5f5f5f;
+}
+
+footer .copyrights a{
+    text-decoration: none;
+    color: #928f8f;
+}
+
+footer .copyrights a:hover{
+    font-weight: bolder;
+    color: #ffffff;
+}
 /* TELAS ATE 820PX*/
 @media(max-width: 820px){
     
@@ -298,7 +331,13 @@ header .menu:hover{
         grid-template-columns: repeat(2, 1fr);
     }
 
+    footer .container{
+        flex-direction: column;
+        gap: 25px;
+    }
 }
+
+
 
 @media (max-width: 500px){
     .products-grid{
